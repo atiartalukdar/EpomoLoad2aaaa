@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+      <TextView
+          android:text="Phone Number"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/textViewPhoneNumber" />
+
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:inputType="phone"
+          android:hint="Phone Number"
+          android:id="@+id/PhoneNumberED"
+          android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:text="Amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Ammount"
+        android:id="@+id/ammountED"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:text="Reload Now"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="reloadNow"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:id="@+id/reloadButton" />
+
+    <Button
+        android:text="Get Subscription via USSD"
+        android:layout_width="match_parent"
+        android:onClick="GetSubsUSSD"
+        android:layout_height="wrap_content"
+        android:id="@+id/button" />
+
+
+</LinearLayout>
